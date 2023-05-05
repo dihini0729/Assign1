@@ -1,0 +1,156 @@
+/* css for body of the website */ 
+  body, html{
+        height:100%;
+        margin:0;
+        font-size:16px;
+        font-family:"lato", sans-serif; 
+        font-weight:400;
+        line-height:1.8em;
+        color:#666;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .pimg1, .pimg2, .pimg3, .pimg4, .pimg5,.pimg6{
+        position: relative;
+        opacity:0.70;
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+
+/* parallax effect for the sections */
+        background-attachment:fixed;
+    }
+/* css for background images*/
+    .pimg1{
+        background-image:url(img/1.jpg);
+        min-height:50%;
+    }
+
+    .pimg2{
+        background-image:url(img/2.jpg);
+        min-height:400px;
+    }
+
+    .pimg3{
+        background-image:url(img/3.jpg);
+        min-height:400px; 
+    }
+
+    .pimg4{
+        background-image:url(img/4.jpg);
+        min-height:400px; 
+    }
+
+    .pimg5{
+        background-image:url(img/5.jpg);
+        min-height:400px; 
+    }
+
+    .pimg6{
+        background-image:url(img/6.jpg);
+        min-height:400px; 
+    }
+
+    .section{
+        text-align:center;
+        padding:50px 80px;
+    }
+/* css for navigation bar */
+    nav {
+        font-family: 'Inter', sans-serif;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 23px;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        }
+    
+        nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        }
+    
+        nav li {
+        margin-right: 10px;
+        }
+    
+        nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+    
+        nav span {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 10px;
+        }
+    
+        nav a:hover {
+        background-color: white;
+        color: black;
+        box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+        }
+    /* css for the unordered lists */
+        ul.myul{
+            display:inline-block;
+            text-align:center;
+        }
+    /* css for the ordered list */
+        ol.myol{
+            display:inline-block;
+            text-align:center;
+
+        } 
+    /* css for the table */
+    #sensors{
+        margin-left: auto;
+        margin-right: auto;
+    }
+        td, th{
+            text-align:center;
+            border: 1px solid #dddddd;
+        }
+
+        th{
+            background-color: #dddddd;
+        }
+    /* css for the image caption */
+        figcaption{
+            color: black;
+        }
+    /* css for the footer */
+        footer{
+            font-style: italic;
+        }
+        .email{
+            font-style: italic;
+            float: right;
+        }
+    /* css for the aside paragraph */
+        aside{
+            border-width: 2px; 
+            border-color: #666;
+            border-style: solid;
+            margin: 1em;
+            padding: 1em;
+            width: 30%;
+            float: right;
+        }
+
+        

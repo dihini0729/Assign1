@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz Page</title>
+
+	<link rel="stylesheet" type="text/css" href="Styles/Quiz_style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+		 
+	
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="Index.html">Home</a></li>
+			<li><a href="Quiz.html">Quiz</a></li>
+			<li><a href="AboutUS.html">About Us</a></li>
+			<li><a href="enhancement.html">Enhancements</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<div class="image">
+			<img src="images/q1.jpg" alt="Image description">
+		</div>
+		<div class="description">
+			<h2>Welcome To The Quiz </h2>
+			<p>The quiz is a web-based form that contains a set of questions related to the Internet of Things (IoT) and personal information. The quiz is designed to test the user's knowledge and understanding of the basic concepts related to IoT, such as its definition, communication protocols, examples of IoT devices, security challenges, etc. The quiz consists of five multiple-choice and open-ended questions, as well as a personal information section, where the user is required to provide their first name, last name, and student ID. The quiz is interactive and allows the user to select and submit their answers for grading. The quiz serves as a useful tool for self-assessment and evaluation of one's knowledge of IoT concepts. </p>
+		</div>
+	</div>
+
+	<div class="container">
+		<form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" novalidate>
+			<fieldset>
+				<legend>Question 1: What is the Internet of Things (IoT)?</legend>
+				<label for="q1">Answer:</label>
+				<input type="text" id="q1" name="q1"  required>
+				
+			</fieldset>
+			<fieldset>
+				<legend>Question 2: benifits of IoT in health care ?</legend>
+				<label for="q2a"><input type="radio" id="q2a" name="q2" value="a"> Cost efficiency</label>
+				<label for="q2b"><input type="radio" id="q2b" name="q2" value="b"> Time saving</label>
+				<label for="q2c"><input type="radio" id="q2c" name="q2" value="c" required> Possibility of errors increasing</label>
+
+			</fieldset>
+			<fieldset>
+				<legend>Question 3: Which of the following are examples of IoT devices?</legend>
+				<label for="q3a"><input type="checkbox" id="q3a" name="q3[]" value="a"> Smart Thermostat</label>
+				<label for="q3b"><input type="checkbox" id="q3b" name="q3[]" value="b"> Fitness Tracker</label>
+				<label for="q3c"><input type="checkbox" id="q3c" name="q3[]" value="c" required> Smart Lock</label>
+				<label for="q3d"><input type="checkbox" id="q3d" name="q3[]" value="d" required> Smart Speaker</label>
+			</fieldset>
+			<fieldset>
+				<legend>Question 4: What sensor is used in animal agriculture?</legend>
+    			<select id="q4" name="q4" required>
+        			<option value="">Select the sensor in animal agriculture</option>
+        			<option value="visionsensor">Vision Sensor</option>
+        			<option value="airflowsensor">Airflow Sensor</option>
+        			<option value="electrochemicalsensor">Electrochemical Sensor</option>
+        			<option value="other">Other</option>
+    			</select>
+			</fieldset>
+			<fieldset>
+				<legend>Question 5: What are some of the security challenges in IoT?</legend>
+				<label for="q5">Answer:</label>
+				<textarea id="q5" name="q5" rows="5" cols="50" required></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Personal Information</legend>
+				<label for="fname">First Name:</label>
+				<input type="text" id="fname" name="name" pattern="[A-Za-z -]{1,30}" required>
+				<label for="lname">Last Name:</label>
+				<input type="text" id="lname" name="name" pattern="[A-Za-z -]{1,30}" required>
+				<label for="id">Student ID</label>
+				<input type="text" id="id" name="id" pattern="[0-9]{7}|[0-9]{10}" required>
+			
+			</fieldset>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+	
+    
+
+</body>
+</html>

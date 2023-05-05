@@ -1,0 +1,158 @@
+/* css for body of the website */
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "lato" , sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+
+.bgimg_1 , .bgimg_2, .bgimg_3, .bgimg_4, .bgimg_5, .bgimg_6{
+    position: relative;
+    opacity: 0.85;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+/* parallax effect for the sections */
+    background-attachment: fixed;
+}
+/* css for background image 1 */
+.bgimg_1{
+    background-image:url(img/A.jpg);
+    min-height:50%;
+}
+/* css for background image 2 */
+.bgimg_2{
+    background-image:url(img/B.jpg);
+    min-height:400px;
+}
+/* css for background image 3 */
+.bgimg_3{
+    background-image:url(img/C.jpg);
+    min-height:400px;
+}
+/* css for background image 4 */
+.bgimg_4{
+    background-image:url(img/D.jpg);
+    min-height:400px;
+}
+/* css for background image 5 */
+.bgimg_5{
+    background-image:url(img/E.jpg);
+    min-height:400px;
+}
+/* css for background image 6 */
+.bgimg_6{
+    background-image:url(img/F.jpg);
+    min-height:400px;
+}
+
+/* css for navigation bar */
+nav {
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 23px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    }
+  
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+  
+    nav li {
+      margin-right: 10px;
+    }
+  
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+  
+    nav span {
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+  
+    nav a:hover {
+      background-color: white;
+      color: black;
+      box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+    }
+    /* css for the unordered lists */
+    ul.myul{
+        display:inline-block;
+        text-align:center;
+    }
+    /* css for the ordered list */
+    ol.myol{
+        display:inline-block;
+        text-align:center;
+    }
+    /* css for the table */
+    #sensors{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    td, th{
+        text-align:center;
+        border: 1px solid #dddddd;
+    }
+
+    th{
+        background-color: #dddddd;
+    }
+    /* css for the image caption */
+    figcaption{
+        color: black;
+    }
+    /* css for the aside paragraph */
+    aside{
+        border-width: 2px; 
+        border-color: #666;
+        border-style: solid;
+        margin: 1em;
+        padding: 1em;
+        width: 30%;
+        float: right;
+    }
+    /* css for the footer */
+    footer{
+        background-color:lightblue;
+        padding-top: 30px;
+        color: black;
+    }
+    
+    .copyright{
+        font-style: italic;
+    } 
+
+    .email{
+        font-style: italic;
+        float: right;
+    }
